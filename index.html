@@ -1,6 +1,20 @@
+<html>
+  <head>
+    <title>My todo App</title>
+  </head>
+  <body>
+
 <style>
-  *{
+  body{
+    background-color: #F4EEE5;
       font-family: "Times News Roman";
+  }
+  
+  .main-content {
+    background-color: white;
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
   }
   
   h1 {
@@ -37,7 +51,7 @@
   }
 
 </style>
-<div>
+<div class="main-content">
 <h1>June 3, 2017</h1>
 <ul>
   <li><input type="checkbox"/><a href="show.html">Workshop Todo List</a></li>
@@ -50,5 +64,11 @@
   <li><input type="checkbox"/><a href="show.html">Have a great workshop 0 pomodoros</a></li>
 </ul>
 
-<button> add todo</button>
+<form method="get">
+<input type="text" placeholder="Add a todo...">
+<input type="number" placeholder="Pomodoro estimate...">
+<input type="submit"></form>
 </div>
+
+</body>
+</html>
